@@ -14,14 +14,9 @@
     <div class="container">
       <header>
         <div class="header-background"></div>
-
         <div class="header-image-container">
-          <!-- <img class="header-image"
-            src="<%= require('./images/small-fluffy-dog-breeds-maltipoo-66300ad363389.jpg')%>"
-            alt=""
-          /> -->
           <img
-            src="./images/woman-wearing-virtual-reality-simulator-small.jpg"
+            src="<%= require('./images/woman-wearing-virtual-reality-simulator-small.jpg')%>"
             alt=""
             class="header-image"
           />
@@ -44,7 +39,7 @@
               href="https://github.com/wnnow"
               class="header-profile-link"
               target="_blank"
-              ><img src="./images/github-mark.svg" alt=""
+              ><img src="<%= require('./images/github-mark.svg')%>" alt=""
             /></a>
           </div>
         </div>
@@ -55,17 +50,18 @@
           <div class="project-container">
             <section class="project-card">
               <div class="screenshot-project-img">
+                <%= require('./images/screenshot-battleship.png')%>
                 <img
                   srcset="
-                    ./images/Screenshot-battleship-600-1200.png  600w,
-                    ./images/screenshot-battleship.png          1200w
+                  <%= require('./images/Screenshot-battleship-600-1200.png')%> 600w,
+                  <%= require('./images/screenshot-battleship.png')%>         1200w
                   "
                   sizes="
                   (max-width: 599px) 600px,
                   (min-width: 600px) and (max-width: 1199px) 600px,
                   (min-width: 1200px) 1200px
               "
-                  src="./images/screenshot-battleship.png"
+                  src=" <%= require('./images/screenshot-battleship.png')%>"
                   alt="project screenshot"
                   class="screenshot"
                 />
@@ -77,13 +73,13 @@
                     <a href="#"
                       ><img
                         class="project-link-icon"
-                        src="./images/github-mark.svg"
+                        src="<%= require('./images/github-mark.svg')%>"
                         alt="open new tap project on github"
                     /></a>
                     <a href="#"
                       ><img
                         class="project-link-icon"
-                        src="./images/pageview_24dp_FILL0_wght400_GRAD0_opsz24.png"
+                        src="<%= require('./images/pageview_24dp_FILL0_wght400_GRAD0_opsz24.png')%>"
                         alt="open new tap project live preview "
                     /></a>
                   </div>
@@ -106,13 +102,13 @@
                     <a href="#"
                       ><img
                         class="project-link-icon"
-                        src="./images/github-mark.svg"
+                        src="<%= require('./images/github-mark.svg')%>"
                         alt="open new tap project on github"
                     /></a>
                     <a href="#"
                       ><img
                         class="project-link-icon"
-                        src="./images/pageview_24dp_FILL0_wght400_GRAD0_opsz24.png"
+                        src="<%= require('./images/pageview_24dp_FILL0_wght400_GRAD0_opsz24.png')%>"
                         alt="open new tap project live preview "
                     /></a>
                   </div>
@@ -135,13 +131,13 @@
                     <a href="#"
                       ><img
                         class="project-link-icon"
-                        src="./images/github-mark.svg"
+                        src="<%= require('./images/github-mark.svg')%>"
                         alt="open new tap project on github"
                     /></a>
                     <a href="#"
                       ><img
                         class="project-link-icon"
-                        src="./images/pageview_24dp_FILL0_wght400_GRAD0_opsz24.png"
+                        src="<%= require('./images/pageview_24dp_FILL0_wght400_GRAD0_opsz24.png')%>"
                         alt="open new tap project live preview "
                     /></a>
                   </div>
@@ -164,13 +160,13 @@
                     <a href="#"
                       ><img
                         class="project-link-icon"
-                        src="./images/github-mark.svg"
+                        src="<%= require('./images/github-mark.svg')%>"
                         alt="open new tap project on github"
                     /></a>
                     <a href="#"
                       ><img
                         class="project-link-icon"
-                        src="./images/pageview_24dp_FILL0_wght400_GRAD0_opsz24.png"
+                        src="<%= require('./images/pageview_24dp_FILL0_wght400_GRAD0_opsz24.png')%>"
                         alt="open new tap project live preview "
                     /></a>
                   </div>
@@ -193,13 +189,13 @@
                     <a href="#"
                       ><img
                         class="project-link-icon"
-                        src="./images/github-mark.svg"
+                        src="<%= require('./images/github-mark.svg')%>"
                         alt="open new tap project on github"
                     /></a>
                     <a href="#"
                       ><img
                         class="project-link-icon"
-                        src="./images/pageview_24dp_FILL0_wght400_GRAD0_opsz24.png"
+                        src="<%= require('./images/pageview_24dp_FILL0_wght400_GRAD0_opsz24.png')%>"
                         alt="open new tap project live preview "
                     /></a>
                   </div>
@@ -222,13 +218,13 @@
                     <a href="#"
                       ><img
                         class="project-link-icon"
-                        src="./images/github-mark.svg"
+                        src="<%= require('./images/github-mark.svg')%>"
                         alt="open new tap project on github"
                     /></a>
                     <a href="#"
                       ><img
                         class="project-link-icon"
-                        src="./images/pageview_24dp_FILL0_wght400_GRAD0_opsz24.png"
+                        src="<%= require('./images/pageview_24dp_FILL0_wght400_GRAD0_opsz24.png')%>"
                         alt="open new tap project live preview "
                     /></a>
                   </div>
@@ -258,32 +254,31 @@
               </div>
               <div class="contact-phone-email-wrapper">
                 <div class="contact-phone">
-                  <span class="material-symbols-outlined"> call </span
-                  >555-555-5555
+                  <span class="material-symbols-outlined">call</span>
+                  555-555-5555
                 </div>
                 <div class="contact-email">
-                  <span class="material-symbols-outlined"> mail </span
-                  >kurosakishin@notrealmail.com
+                  <span class="material-symbols-outlined">mail</span>
+                  kurosakishin@notrealmail.com
                 </div>
               </div>
               <div class="contact-link-container">
-                <a target="_blank" href="https://github.com/wnnow"
-                  ><img
+                <a target="_blank" href="https://github.com/wnnow">
+                  <img
                     class="contact-link-icon"
-                    src="./images/github-mark.svg"
-                    alt="open new tap to github"
-                /></a>
+                    src="<%= require('./images/github-mark.svg') %>"
+                    alt="open new tab to GitHub"
+                  />
+                </a>
               </div>
             </div>
 
             <div class="footer-img-container">
               <img
-                srcset="
-                  ./images/woman-wearing-virtual-reality-simulator_13327663.jpg      1200w,
-                  ./images/woman-wearing-virtual-reality-simulator_13327663-crop.png 1199w
-                "
-                sizes="(max-width:599px)1199px,(min-width:600px) and (max-width:1199px) 1199px,1200px"
-                src="./images/woman-wearing-virtual-reality-simulator_13327663.jpg"
+                srcset="<%= require('./images/woman-wearing-virtual-reality-simulator_13327663.jpg') %> 1200w,
+                                <%= require('./images/woman-wearing-virtual-reality-simulator_13327663-crop.png') %> 1199w"
+                sizes="(max-width: 599px) 1199px, (min-width: 600px) and (max-width: 1199px) 1199px, 1200px"
+                src="<%= require('./images/woman-wearing-virtual-reality-simulator_13327663.jpg') %>"
                 alt=""
               />
             </div>
